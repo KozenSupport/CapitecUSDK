@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingTop="34dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#DDE7E2"
+            android:text="@string/back_button"
+            android:textColor="#10231F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/screen_title"
+            android:textColor="#10231F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/languageButton"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#DDE7E2"
+            android:text="@string/language_button"
+            android:textColor="#10231F"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/strategyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/strategy_title"
+        android:textColor="#54625D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#33413D"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/pinAdapterTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#146C5C"
+        android:text="@string/pin_demo_entry"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/capabilityList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#E3E0D6"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/detailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:text="@string/select_interface"
+        android:textColor="#10231F"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:hint="@string/input_hint"
+        android:inputType="text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="#10231F"
+        android:textColorHint="#8A938E"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/enumInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" />
+
+    <CheckBox
+        android:id="@+id/confirmCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/confirm_side_effect"
+        android:textColor="#33413D"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/runButton"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#146C5C"
+        android:text="@string/run_button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/exposureDecisionRow"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exposurePendingButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8A938E"
+            android:text="@string/exposure_pending_button"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exposureAllowButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1E7A44"
+            android:text="@string/exposure_allow_button"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/exposureDenyButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A33A32"
+            android:text="@string/exposure_deny_button"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/failureReasonText"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="6dp"
+        android:background="#FFFFFF"
+        android:gravity="top"
+        android:hint="@string/failure_reason_hint"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:textColor="#10231F"
+        android:textColorHint="#8A938E"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/manualResultRow"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/passButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1E7A44"
+            android:text="@string/pass_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/prerequisiteButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B06000"
+            android:text="@string/prerequisite_failed_button"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/failButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A33A32"
+            android:text="@string/fail_button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="top"
+        android:minHeight="96dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#10231F"
+        android:textSize="13sp" />
+</LinearLayout>
